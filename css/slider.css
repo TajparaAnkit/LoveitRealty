@@ -1,0 +1,51 @@
+/*** Slider 1 Start ***/
+.slider-1 .carousel-caption {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background: rgba(0, 29, 35, 0.8); */
+  background-image: url(../img/slider-1-overlay.png);
+  z-index: 1;
+}
+
+.slider-1 .carousel-control-prev,
+.slider-1 .carousel-control-next {
+  width: 15%;
+}
+
+.slider-1 .carousel-control-prev-icon,
+.slider-1 .carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--dark);
+  border: 12px solid var(--dark);
+}
+.slider-1 .carousel-caption h1 {
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .slider-1 .carousel-item {
+    position: relative;
+    min-height: 450px;
+  }
+
+  .slider-1 .carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slider-1 .carousel-caption h1 {
+    font-size: 28px;
+  }
+}
+
+/*** Slider 1 End ***/
