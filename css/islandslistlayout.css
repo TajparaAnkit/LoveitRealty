@@ -1,0 +1,23 @@
+.ltr-islands-list-layout {
+  padding-top: var(--section-top-bottom-spacer);
+  padding-bottom: var(--section-top-bottom-spacer);
+}
+.ltr-islands-map img {
+  width: 100%;
+}
+.ltr-islands-list-layout .card,
+.ltr-islands-list-layout .card-img-top {
+  border-radius: 0;
+}
+@media screen and (max-width: 767px) {
+  .ltr-islands-list-layout {
+    padding-top: var(--section-top-bottom-spacer-mobile);
+    padding-bottom: var(--section-top-bottom-spacer-mobile);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ltr-islands-list-layout {
+    padding-top: var(--section-top-bottom-spacer-tablet);
+    padding-bottom: var(--section-top-bottom-spacer-tablet);
+  }
+}

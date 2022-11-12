@@ -1,0 +1,59 @@
+/*** footer-1 ***/
+.footer-1{
+    background-color: var(--primary-bg);
+}
+.footer-1 .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer-1 .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer-1 .btn.btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+.footer-1 .btn-link {
+    font-weight: 400;
+    color: #348E38;
+    text-decoration: none;
+}
+
+.footer-1 .btn-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+.footer-1 .btn-square {
+    width: 38px;
+    height: 38px;
+}
+.copyright-1 {
+    color: var(--light);
+    background: var(--primary-bg);
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.copyright-1 a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.copyright-1 a:hover {
+    color: var(--primary);
+}

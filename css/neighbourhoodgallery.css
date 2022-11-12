@@ -1,0 +1,93 @@
+.ltr-neighbourhood-gallery {
+  padding-top: var(--section-top-bottom-spacer);
+  padding-bottom: var(--section-top-bottom-spacer);
+}
+/* Title  */
+.ltr-neighbourhood-gallery .title-h1 {
+  max-width: 700px;
+}
+.ltr-neighbourhood-gallery .title-h1 h1 {
+  color: #153048;
+}
+.ltr-neighbourhood-gallery .title-h1 span {
+  color: #007de4;
+  font-weight: 700;
+}
+.ltr-neighbourhood-gallery .title-h1 span::after {
+  content: "";
+  width: 70px;
+  border: 1px solid #124084;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+}
+.ltr-neighbourhood-gallery .masonry-column {
+  padding: 0 1px;
+}
+.ltr-neighbourhood-gallery .masonry-column.masonry-column-2 .ltr-gallery-item a img {
+  min-height: 648px;
+  object-fit: cover;
+}
+
+.ltr-neighbourhood-gallery .masonry-column.masonry-column-1 .ltr-gallery-item a img,
+.ltr-neighbourhood-gallery .masonry-column.masonry-column-4 .ltr-gallery-item a img {
+  min-height: 318px;
+  object-fit: cover;
+}
+
+.ltr-neighbourhood-gallery .masonry-column.masonry-column-3 .ltr-gallery-item a img {
+  height: 312px;
+  object-fit: cover;
+}
+
+.ltr-neighbourhood-gallery .masonry-grid > div .thumbnail {
+  margin: 5px 1px;
+}
+.ltr-neighbourhood-gallery .thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border-radius: 4px;
+
+  transition: border 0.2s ease-in-out;
+}
+.ltr-neighbourhood-gallery .thumbnail > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+.ltr-gallery-img:hover {
+  z-index: 3;
+}
+.ltr-gallery-item {
+  position: relative;
+}
+.ltr-gallery-text {
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  z-index: 2;
+  visibility: visible;
+  transition: 0.3s all ease;
+  background-color: #ffffff80;
+  padding: 10px 20px;
+}
+/* Title  */
+@media screen and (max-width: 767px) {
+  .ltr-neighbourhood-gallery {
+    padding-top: var(--section-top-bottom-spacer-mobile);
+    padding-bottom: var(--section-top-bottom-spacer-mobile);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ltr-neighbourhood-gallery {
+    padding-top: var(--section-top-bottom-spacer-tablet);
+    padding-bottom: var(--section-top-bottom-spacer-tablet);
+  }
+}

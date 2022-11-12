@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40">
+  <g id="Group_90" data-name="Group 90" transform="translate(-30 -30)">
+    <g id="Header">
+      <g id="Logo">
+        <g id="Group_1" data-name="Group 1" transform="translate(-995.089 -450.644)">
+          <path id="Path_1" data-name="Path 1" d="M1050.972,520.644h-7.021V504.031H1041.3V515.4h-7V501.7h4.665v-4.839h-7v23.785h-6.88V494.527h4.548V480.644h16.646V501.7h4.688Zm-4.688-2.332h2.356V504.031h-2.356Zm-18.862,0h2.216V496.859h-2.216Zm9.212-5.243h2.333v-9.038h-2.333Zm4.665-11.37h2.653V482.976h-11.982v11.551h9.329Z" fill="#fff"/>
+        </g>
+        <text id="Love_it_Realty" data-name="Love it Realty" transform="translate(73 58)" fill="#fff" font-size="20" font-family="Muli-Black, Muli" font-weight="800"><tspan x="0" y="0">LOVE IT</tspan><tspan y="0" xml:space="preserve" font-family="Muli-Regular, Muli" font-weight="400"> REALTY</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

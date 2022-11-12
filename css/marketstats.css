@@ -1,0 +1,54 @@
+/* <!--Market stats for the last 12 months Start--> */
+.ltr-rsome-number {
+  padding-top: var(--section-top-bottom-spacer);
+  padding-bottom: var(--section-top-bottom-spacer);
+}
+.ltr-rsome-number h1 {
+  color: var(--ltr-rsome-number-h1);
+}
+.ltr-rsome-number span {
+  color: var(--ltr-rsome-number-subtitle);
+}
+.ltr-rsome-number .title-h1 {
+  padding-bottom: 100px;
+}
+.ltr-rsome-number .title-h1 h1 {
+  color: #153048;
+}
+.ltr-rsome-number .title-h1 span {
+  color: #007de4;
+  font-weight: 700;
+}
+.ltr-rsome-number .title-h1 span::after {
+  content: "";
+  width: 70px;
+  border: 1px solid #124084;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+}
+/* <!--Market stats for the last 12 months Start--> */
+
+@media screen and (max-width: 767px) {
+  .ltr-rsome-number {
+    padding-top: var(--section-top-bottom-spacer-mobile);
+    padding-bottom: var(--section-top-bottom-spacer-mobile);
+  }
+  .ltr-rsome-number .title-h1{
+    padding-bottom: 48px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ltr-rsome-number {
+    padding-top: var(--section-top-bottom-spacer-tablet);
+    padding-bottom: var(--section-top-bottom-spacer-tablet);
+  }
+  .ltr-rsome-number .title-h1{
+    padding-bottom: 60px;
+  }
+}
+
+
