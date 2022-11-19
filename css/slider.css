@@ -47,5 +47,10 @@
     font-size: 28px;
   }
 }
-
+@media (min-width: 993px) {
+  #header-carousel .carousel-item,
+  #header-carousel .carousel-item img {
+    height: 100vh;
+  }
+}
 /*** Slider 1 End ***/
