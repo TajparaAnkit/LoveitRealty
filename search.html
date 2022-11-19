@@ -1568,6 +1568,38 @@
     </div>
     <!-- Tab End -->
 
+    <!-- New Search modal-->
+    <div class="container-fluid ltr-searchmodal">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-9 col-sm-8 col-xs-10 col-6">
+                    <div class="text-left title-h1">
+                        <input type="text" class="form-control rounded-0" id=""
+                            placeholder="Island, Area, Building, MLS Numbers">
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 text-end col-md-3 col-sm-4 col-xs-10 col-6">
+                    <a class="btn btn-lg btn-bd-primary rounded-0 text-uppercase" href="">Filters</a>
+                    <a class="btn btn-lg btn-bd-primary rounded-0 text-uppercase" href="javascript:void(0)"
+                        data-bs-toggle="modal" data-bs-target="#ltr-searchmodal"><i class="fa fa-filter"></i></a>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 col-md-9 col-sm-8 col-xs-10 col-6">
+                    <div class="text-left title-h1">
+                        <a class="ltr-savesearch" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#ltr-searchmodal"><i class="fa fa-bookmark"></i> Save Search</a>
+                    </div>
+                </div>
+                <div class="col-lg-2 text-end col-md-3 col-sm-4 col-xs-10 col-6">
+                    <p class="mb-0 mt-2">38,311 Listing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Search modal-->
+
     <!-- 3 layer Button Start -->
     <div class="container py-5">
         <div class="container">
@@ -2986,6 +3018,482 @@
                             inquiry.
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Search -->
+    <div class="modal fade" id="ltr-searchmodal" tabindex="-1" aria-labelledby="ltr-signupformmodal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header ltr-modal-title">
+                    <h5 class="modal-title text-light" id="schedulepropertytourModal">Search
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mob-search-fields">
+                        <form id="searchform" method="post">
+                            <div id="accordion">
+                                <div class="form-nav-item" id="PriceFiledBox">
+                                    <a href="#" class="form-nav-dropdown-toggle collapsed" data-toggle="collapse"
+                                        data-target="#PriceDropdownMenu" id="PriceDropdownToogle" aria-expanded="false"
+                                        aria-controls="PriceDropdownMenu">
+                                        Price
+                                        <span class="float-end nav-icon"><i class="fa fa-angle-down"></i></span>
+                                    </a>
+                                    <div class="form-nav-item-dropdown collapse" id="PriceDropdownMenu"
+                                        data-parent="#accordion">
+                                        <div class="card-body ">
+                                            <div class="row">
+                                                <div class="col-12 ListingTypeCheckBoxes">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Active" data-value="Active" checked="">
+                                                        <label class="form-check-label" for="LType-Active">
+                                                            Active
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Pending" data-value="Pending">
+                                                        <label class="form-check-label" for="LType-Pending">
+                                                            Pending
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Under-Contract" data-value="Under Contract">
+                                                        <label class="form-check-label" for="LType-Under-Contract">
+                                                            Under Contract
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Closed" data-value="Closed">
+                                                        <label class="form-check-label" for="LType-Closed">
+                                                            Closed
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-New-Construction" data-value="New Construction">
+                                                        <label class="form-check-label" for="LType-New-Construction">
+                                                            New Construction
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Foreclosure" data-value="Foreclosure">
+                                                        <label class="form-check-label" for="LType-Foreclosure">
+                                                            Foreclosure
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Short-Sale" data-value="Short Sale">
+                                                        <label class="form-check-label" for="LType-Short-Sale">
+                                                            Short Sale
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Active" data-value="Active" checked="">
+                                                        <label class="form-check-label" for="LType-Active">
+                                                            Active
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Pending" data-value="Pending">
+                                                        <label class="form-check-label" for="LType-Pending">
+                                                            Pending
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Under-Contract" data-value="Under Contract">
+                                                        <label class="form-check-label" for="LType-Under-Contract">
+                                                            Under Contract
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Closed" data-value="Closed">
+                                                        <label class="form-check-label" for="LType-Closed">
+                                                            Closed
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-New-Construction" data-value="New Construction">
+                                                        <label class="form-check-label" for="LType-New-Construction">
+                                                            New Construction
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Foreclosure" data-value="Foreclosure">
+                                                        <label class="form-check-label" for="LType-Foreclosure">
+                                                            Foreclosure
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Short-Sale" data-value="Short Sale">
+                                                        <label class="form-check-label" for="LType-Short-Sale">
+                                                            Short Sale
+                                                        </label>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-nav-item" id="PriceFiledBox">
+                                    <a href="#" class="form-nav-dropdown-toggle collapsed" data-toggle="collapse"
+                                        data-target="#PriceDropdownMenu1" id="PriceDropdownToogle1" aria-expanded="false"
+                                        aria-controls="PriceDropdownMenu1">
+                                        Price
+                                        <span class="float-end nav-icon"><i class="fa fa-angle-down"></i></span>
+                                    </a>
+                                    <div class="form-nav-item-dropdown collapse" id="PriceDropdownMenu1"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 ListingTypeCheckBoxes">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Active" data-value="Active" checked="">
+                                                        <label class="form-check-label" for="LType-Active">
+                                                            Active
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Pending" data-value="Pending">
+                                                        <label class="form-check-label" for="LType-Pending">
+                                                            Pending
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Under-Contract" data-value="Under Contract">
+                                                        <label class="form-check-label" for="LType-Under-Contract">
+                                                            Under Contract
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Closed" data-value="Closed">
+                                                        <label class="form-check-label" for="LType-Closed">
+                                                            Closed
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-New-Construction" data-value="New Construction">
+                                                        <label class="form-check-label" for="LType-New-Construction">
+                                                            New Construction
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Foreclosure" data-value="Foreclosure">
+                                                        <label class="form-check-label" for="LType-Foreclosure">
+                                                            Foreclosure
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Short-Sale" data-value="Short Sale">
+                                                        <label class="form-check-label" for="LType-Short-Sale">
+                                                            Short Sale
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                               
+                                <div class="form-nav-item" id="PriceFiledBox">
+                                    <a href="#" class="form-nav-dropdown-toggle collapsed" data-toggle="collapse"
+                                        data-target="#PriceDropdownMenu2" id="PriceDropdownToogle2" aria-expanded="false"
+                                        aria-controls="PriceDropdownMenu2">
+                                        Price
+                                        <span class="float-end nav-icon"><i class="fa fa-angle-down"></i></span>
+                                    </a>
+                                    <div class="form-nav-item-dropdown collapse" id="PriceDropdownMenu2"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 ListingTypeCheckBoxes">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Active" data-value="Active" checked="">
+                                                        <label class="form-check-label" for="LType-Active">
+                                                            Active
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Pending" data-value="Pending">
+                                                        <label class="form-check-label" for="LType-Pending">
+                                                            Pending
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Under-Contract" data-value="Under Contract">
+                                                        <label class="form-check-label" for="LType-Under-Contract">
+                                                            Under Contract
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Closed" data-value="Closed">
+                                                        <label class="form-check-label" for="LType-Closed">
+                                                            Closed
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-New-Construction" data-value="New Construction">
+                                                        <label class="form-check-label" for="LType-New-Construction">
+                                                            New Construction
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Foreclosure" data-value="Foreclosure">
+                                                        <label class="form-check-label" for="LType-Foreclosure">
+                                                            Foreclosure
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Short-Sale" data-value="Short Sale">
+                                                        <label class="form-check-label" for="LType-Short-Sale">
+                                                            Short Sale
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                                <div class="form-nav-item" id="PriceFiledBox">
+                                    <a href="#" class="form-nav-dropdown-toggle collapsed" data-toggle="collapse"
+                                        data-target="#PriceDropdownMenu3" id="PriceDropdownToogle3" aria-expanded="false"
+                                        aria-controls="PriceDropdownMenu3">
+                                        Price
+                                        <span class="float-end nav-icon"><i class="fa fa-angle-down"></i></span>
+                                    </a>
+                                    <div class="form-nav-item-dropdown collapse" id="PriceDropdownMenu3"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 ListingTypeCheckBoxes">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Active" data-value="Active" checked="">
+                                                        <label class="form-check-label" for="LType-Active">
+                                                            Active
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Pending" data-value="Pending">
+                                                        <label class="form-check-label" for="LType-Pending">
+                                                            Pending
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Under-Contract" data-value="Under Contract">
+                                                        <label class="form-check-label" for="LType-Under-Contract">
+                                                            Under Contract
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Closed" data-value="Closed">
+                                                        <label class="form-check-label" for="LType-Closed">
+                                                            Closed
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-New-Construction" data-value="New Construction">
+                                                        <label class="form-check-label" for="LType-New-Construction">
+                                                            New Construction
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Foreclosure" data-value="Foreclosure">
+                                                        <label class="form-check-label" for="LType-Foreclosure">
+                                                            Foreclosure
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Short-Sale" data-value="Short Sale">
+                                                        <label class="form-check-label" for="LType-Short-Sale">
+                                                            Short Sale
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                                <div class="form-nav-item" id="PriceFiledBox">
+                                    <a href="#" class="form-nav-dropdown-toggle collapsed" data-toggle="collapse"
+                                        data-target="#PriceDropdownMenu4" id="PriceDropdownToogle4" aria-expanded="false"
+                                        aria-controls="PriceDropdownMenu4">
+                                        Price
+                                        <span class="float-end nav-icon"><i class="fa fa-angle-down"></i></span>
+                                    </a>
+                                    <div class="form-nav-item-dropdown collapse" id="PriceDropdownMenu4"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 ListingTypeCheckBoxes">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Active" data-value="Active" checked="">
+                                                        <label class="form-check-label" for="LType-Active">
+                                                            Active
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Pending" data-value="Pending">
+                                                        <label class="form-check-label" for="LType-Pending">
+                                                            Pending
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Under-Contract" data-value="Under Contract">
+                                                        <label class="form-check-label" for="LType-Under-Contract">
+                                                            Under Contract
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Closed" data-value="Closed">
+                                                        <label class="form-check-label" for="LType-Closed">
+                                                            Closed
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-New-Construction" data-value="New Construction">
+                                                        <label class="form-check-label" for="LType-New-Construction">
+                                                            New Construction
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Foreclosure" data-value="Foreclosure">
+                                                        <label class="form-check-label" for="LType-Foreclosure">
+                                                            Foreclosure
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Short-Sale" data-value="Short Sale">
+                                                        <label class="form-check-label" for="LType-Short-Sale">
+                                                            Short Sale
+                                                        </label>
+                                                    </div>                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="form-nav-item" id="PriceFiledBox">
+                                    <a href="#" class="form-nav-dropdown-toggle collapsed" data-toggle="collapse"
+                                        data-target="#PriceDropdownMenu5" id="PriceDropdownToogle5" aria-expanded="false"
+                                        aria-controls="PriceDropdownMenu5">
+                                        Price
+                                        <span class="float-end nav-icon"><i class="fa fa-angle-down"></i></span>
+                                    </a>
+                                    <div class="form-nav-item-dropdown collapse" id="PriceDropdownMenu5"
+                                        data-parent="#accordion">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12 ListingTypeCheckBoxes">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Active" data-value="Active" checked="">
+                                                        <label class="form-check-label" for="LType-Active">
+                                                            Active
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Pending" data-value="Pending">
+                                                        <label class="form-check-label" for="LType-Pending">
+                                                            Pending
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Under-Contract" data-value="Under Contract">
+                                                        <label class="form-check-label" for="LType-Under-Contract">
+                                                            Under Contract
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Closed" data-value="Closed">
+                                                        <label class="form-check-label" for="LType-Closed">
+                                                            Closed
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-New-Construction" data-value="New Construction">
+                                                        <label class="form-check-label" for="LType-New-Construction">
+                                                            New Construction
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Foreclosure" data-value="Foreclosure">
+                                                        <label class="form-check-label" for="LType-Foreclosure">
+                                                            Foreclosure
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input"
+                                                            id="LType-Short-Sale" data-value="Short Sale">
+                                                        <label class="form-check-label" for="LType-Short-Sale">
+                                                            Short Sale
+                                                        </label>
+                                                    </div>                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal-footer ps-0 pe-0 text-center d-block pb-0">
+                    <button class="btn btn-lg btn-bd-secondary rounded-0 text-uppercase w-46 m-0"
+                        data-bs-dismiss="modal" aria-label="Close"> Close
+                    </button>
+                    <button class="btn btn-lg btn-bd-primary rounded-0 text-uppercase w-46 m-0"> Search
+                    </button>
                 </div>
             </div>
         </div>
