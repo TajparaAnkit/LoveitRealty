@@ -2,12 +2,14 @@
   padding-top: var(--section-top-bottom-spacer);
   padding-bottom: var(--section-top-bottom-spacer);
 }
+
 .ltr-lifestylelayout .media-thumb {
   position: relative;
   display: block;
   cursor: pointer;
   overflow: hidden;
 }
+
 .ltr-lifestylelayout .media-thumb:after {
   position: absolute;
   top: 0;
@@ -23,6 +25,7 @@
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
+
 .ltr-lifestylelayout .media-thumb img {
   -webkit-transform: scale(1.03);
   -ms-transform: scale(1.03);
@@ -31,6 +34,7 @@
   -o-transition: 0.3s transform ease;
   transition: 0.3s transform ease;
 }
+
 .ltr-lifestylelayout .media-thumb .media-text {
   position: absolute;
   bottom: 50px;
@@ -43,6 +47,7 @@
   transition: 0.3s all ease;
   margin-top: 20px;
 }
+
 .ltr-lifestylelayout .media-thumb .media-text h3 {
   font-size: 1.4rem;
   font-weight: 400;
@@ -51,34 +56,42 @@
   padding: 0;
   letter-spacing: 1px;
 }
+
 .ltr-lifestylelayout .media-thumb .media-text .location {
   font-size: 0.8rem;
   color: rgba(26, 55, 77, 0.5);
 }
+
 .ltr-lifestylelayout .media-thumb .media-text h3,
 .ltr-lifestylelayout .media-thumb .media-text .location {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
+
 .ltr-lifestylelayout .media-thumb:hover {
   z-index: 3;
 }
+
 .ltr-lifestylelayout .media-thumb:hover h3 {
   color: #ffffff;
 }
+
 .ltr-lifestylelayout .media-thumb:hover .location {
   color: rgba(255, 255, 255, 0.5);
 }
+
 .ltr-lifestylelayout .media-thumb:hover img {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
 }
+
 .ltr-lifestylelayout .media-thumb:hover:after {
   opacity: 1;
   visibility: visible;
 }
+
 .ltr-lifestylelayout .media-thumb:hover .media-text {
   -webkit-transition-delay: 0.2s;
   -o-transition-delay: 0.2s;
@@ -86,6 +99,7 @@
   opacity: 1;
   visibility: visible;
 }
+
 .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav {
   position: absolute;
   top: 50%;
@@ -99,6 +113,7 @@
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
+
 .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav .owl-prev,
 .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav .owl-next {
   position: absolute;
@@ -111,26 +126,33 @@
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
+
 @media (max-width: 767.98px) {
+
   .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav .owl-prev,
   .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav .owl-next {
     display: none;
   }
 }
+
 .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav .owl-prev {
   left: -50px;
 }
+
 .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav .owl-prev:hover {
   left: -65px;
   color: #1a374d;
 }
+
 .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav .owl-next {
   right: -50px;
 }
+
 .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav .owl-next:hover {
   color: #1a374d;
   right: -65px;
 }
+
 .ltr-lifestylelayout .ltr-lifestyle-slider .owl-nav .owl-next span {
   display: inline-block;
   -webkit-transform: rotate(-180deg);
@@ -162,6 +184,7 @@
   display: inline-block;
   margin: 5px;
 }
+
 .ltr-lifestylelayout .owl-carousel .owl-dots .owl-dot span {
   display: inline-block;
   width: 8px;
@@ -169,8 +192,15 @@
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.2);
 }
+
 .ltr-lifestylelayout .owl-carousel .owl-dots .owl-dot.active span {
   background: #1a374d;
+}
+
+.ltr-lifestylelayout .ltr-lifestyle-slider .owl-item img {
+  min-height: 432px;
+  display: block;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {
